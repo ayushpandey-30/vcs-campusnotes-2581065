@@ -1,0 +1,13 @@
+#!/bin/sh
+msg=$(head -n1 "$1")
+
+if [ ${#msg} -lt 10 ]; then
+  echo "ERROR: Commit message too short (minimum 10 characters)."
+  exit 1
+fi
+
+if ! echo "$msg" | grep -qE '^(feat|fix|docs|refactor|chore):'; then
+  echo "ERROR: Message must start with feat:, fix:, docs:, refactor: or chore:"
+  exit 1
+fi
+exit 0
