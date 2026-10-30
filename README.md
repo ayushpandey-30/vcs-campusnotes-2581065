@@ -1,5 +1,5 @@
 # CampusNotes
-Change from cloned copy
+CHANGE FROM CLONED COPY
 ## Usage
 Run the notes app and add your notes.
 ## How to Use
